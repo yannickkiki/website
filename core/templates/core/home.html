@@ -1,10 +1,43 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Yannick KIKI</title>
+    <link rel="stylesheet" href="{% static 'core/css/bulma.min.css' %}">
 </head>
 <body>
-    <h1>Hello! I am Yannick KIKI and I love someone named Tobi. Try to find who is her until my next deploy</h1>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Projects
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Blog
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Tutoriels
+              </a>
+              <a class="navbar-item">
+                Divers
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="title">Yannick KIKI</h1>
 </body>
 </html>
