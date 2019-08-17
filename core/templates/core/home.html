@@ -1,50 +1,86 @@
+{% extends "core/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Yannick KIKI</title>
-    <meta name="author" content="Yannick KIKI" />
-    <meta property="og:title" content="Yannick KIKI"/>
-    <meta property="og:url" content="https://yannick-kiki.herokuapp.com/">
-    <meta property="og:site_name"  content="https://yannick-kiki.herokuapp.com/">
-    <meta property="og:description" content="Website of Yannick KIKI">
-    <meta name="keywords" content="Yannick, KIKI, developper, machine, learning, data, scientist, software, engineering"/>
-    <meta name="reply-to" content="seyive.kiki@gmail.com" />
-    <link rel="stylesheet" href="{% static 'core/css/bulma.min.css' %}">
-</head>
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Projects
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Blog
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Tutoriels
-              </a>
-              <a class="navbar-item">
-                Divers
-              </a>
-            </div>
-          </div>
-          <a class="navbar-item">
-            Contact
-          </a>
-        </div>
-      </div>
-    </nav>
-    <h1 class="title">Yannick KIKI</h1>
-</body>
-</html>
+{% block content %}
+<!--================ Start Home Banner Area =================-->
+<section class="home_banner_area">
+	<div class="banner_inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="banner_content">
+						<h3 class="text-uppercase">Hell0</h3>
+						<h1 class="text-uppercase">I am Yannick Kiki</h1>
+						<h5 class="text-uppercase">Computer Engineer</h5>
+						<div class="d-flex align-items-center">
+							<a class="primary_btn" href="#"><span>About Me</span></a>
+							<a class="primary_btn tr-bg" href="#"><span>My career</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="home_right_img">
+						<img class="" src="{% static 'core/img/banner/home-right.png' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Home Banner Area =================-->
+
+<!--================ Start About Us Area =================-->
+<section class="about_area section_gap">
+	<div class="container">
+		<div class="row justify-content-start align-items-center">
+			<div class="col-lg-5">
+				<div class="about_img">
+					<img class="" src="{% static 'core/img/about-us.png' %}" alt="">
+				</div>
+			</div>
+
+			<div class="offset-lg-1 col-lg-5">
+				<div class="main_title text-left">
+					<h2>let’s <br>
+						Introduce about <br>
+						myself</h2>
+					<p>
+						I am Yannick KIKI, student in the final year of engineering cycle in Computer Science and
+						Telecommunications at the Polytechnic School of Abomey Calavi in Benin. I am currently in
+						an internship at <a target="_blank" href="https://www.trybeans.com">Beans</a>
+						where I am a software developer.
+					</p>
+					<p>
+						My centers of interest (in computer science) are:
+						<ul>
+							<li>Efficient programming</li>
+							<li>Machine Learning</li>
+							<li>Data Science</li>
+						</ul>
+					</p>
+					<a class="primary_btn" href="#"><span>Learn more</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End About Us Area =================-->
+
+<!--================ Start Features Area =================-->
+<section class="features_area">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<div class="main_title">
+					<h2>service offers </h2>
+					<p>
+						You can contact me for anything in the field of IT. I could either bring you the
+						best solution, or redirect you to a company or individual that can effectively meet your
+						needs
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Features Area =================-->
+{% endblock %}
