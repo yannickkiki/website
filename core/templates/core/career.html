@@ -1,0 +1,18 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block menu %}
+<li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+<li class="nav-item active"><a class="nav-link" href="{% url 'career' %}">Career</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+{% endblock %}
+
+{% block content %}
+<section class="sample-text-area">
+    <div class="container">
+        <h4 class="text-heading title_color">Career</h4>
+        <p class="sample-text">Coming soon...</p>
+    </div>
+</section>
+{% endblock %}

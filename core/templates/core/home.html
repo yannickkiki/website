@@ -1,5 +1,13 @@
 {% extends "core/base.html" %}
 {% load static %}
+
+{% block menu %}
+<li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'career' %}">Career</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+{% endblock %}
+
 {% block content %}
 <!--================ Start Home Banner Area =================-->
 <section class="home_banner_area">
@@ -12,8 +20,8 @@
 						<h1 class="text-uppercase">I am Yannick Kiki</h1>
 						<h5 class="text-uppercase">Computer Engineer</h5>
 						<div class="d-flex align-items-center">
-							<a class="primary_btn" href="#"><span>About Me</span></a>
-							<a class="primary_btn tr-bg" href="#"><span>My career</span></a>
+							<a class="primary_btn" href="{% url 'about' %}"><span>About Me</span></a>
+							<a class="primary_btn tr-bg" href="{% url 'career' %}"><span>My career</span></a>
 						</div>
 					</div>
 				</div>
